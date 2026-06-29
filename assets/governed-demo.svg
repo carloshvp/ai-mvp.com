@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title description">
+  <title id="title">Governed Embodied Agent Lab demo run</title>
+  <desc id="description">A controlled move executes, a restricted move requires human approval, execution continues after restart, approval replay is blocked, and the evidence chain verifies.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a111d"/>
+      <stop offset="1" stop-color="#102a43"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" rx="22" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="58" rx="22" fill="#172434"/>
+  <rect x="0" y="36" width="1200" height="22" fill="#172434"/>
+  <circle cx="34" cy="29" r="7" fill="#ff6b6b"/>
+  <circle cx="58" cy="29" r="7" fill="#f2b84b"/>
+  <circle cx="82" cy="29" r="7" fill="#49d6c8"/>
+  <text x="600" y="35" text-anchor="middle" fill="#a9c7d2" font-family="SFMono-Regular, Consolas, monospace" font-size="15">governed-agent demo</text>
+
+  <text x="48" y="102" fill="#ffffff" font-family="SFMono-Regular, Consolas, monospace" font-size="22" font-weight="700">Governed Embodied Agent Lab</text>
+  <line x1="48" y1="122" x2="1152" y2="122" stroke="#31475c"/>
+
+  <g font-family="SFMono-Regular, Consolas, monospace" font-size="18">
+    <text x="48" y="164" fill="#d6e5ea">1. Observe workspace</text>
+    <text x="470" y="164" fill="#49d6c8">EXECUTED</text>
+    <text x="670" y="164" fill="#8fb9c4">observe-workspace</text>
+
+    <text x="48" y="207" fill="#d6e5ea">2. Enter controlled zone</text>
+    <text x="470" y="207" fill="#49d6c8">EXECUTED</text>
+    <text x="670" y="207" fill="#8fb9c4">approved-zone</text>
+
+    <text x="48" y="250" fill="#d6e5ea">3. Request restricted move</text>
+    <text x="470" y="250" fill="#f2b84b">APPROVAL REQUIRED</text>
+    <text x="730" y="250" fill="#8fb9c4">restricted-zone</text>
+
+    <text x="48" y="293" fill="#d6e5ea">4. Human approval issued</text>
+    <text x="470" y="293" fill="#f2b84b">ACTION + CONTEXT BOUND</text>
+
+    <text x="48" y="336" fill="#d6e5ea">5. Execute after restart</text>
+    <text x="470" y="336" fill="#49d6c8">EXECUTED</text>
+    <text x="670" y="336" fill="#8fb9c4">evidence continued</text>
+
+    <text x="48" y="379" fill="#d6e5ea">6. Replay same approval</text>
+    <text x="470" y="379" fill="#ff7f7f">BLOCKED</text>
+    <text x="670" y="379" fill="#8fb9c4">token already consumed</text>
+
+    <text x="48" y="422" fill="#d6e5ea">7. Verify evidence chain</text>
+    <text x="470" y="422" fill="#49d6c8">VERIFIED</text>
+    <text x="670" y="422" fill="#8fb9c4">17 linked records</text>
+  </g>
+
+  <rect x="48" y="458" width="1104" height="1" fill="#31475c"/>
+  <text x="48" y="493" fill="#7fa7b2" font-family="SFMono-Regular, Consolas, monospace" font-size="15">Policy default: deny  |  Identity required  |  Approval: one use  |  Ledger: SHA-256 chain</text>
+</svg>
