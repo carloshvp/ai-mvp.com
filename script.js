@@ -5,10 +5,12 @@ const traceButtons = document.querySelectorAll("[data-step]");
 const traceEvidence = document.querySelector("[data-trace-evidence]");
 
 const evidenceByStep = {
-  enterprise: "20+ AI solutions advanced toward deployment in a large industrial context.",
-  agents: "16 merged Microsoft Agent Governance Toolkit PRs and 4 merged AgenTrust example PRs.",
-  embodied:
-    "A runnable embodied-agent lab plus a robotics research notebook connect governance to physical AI."
+  enterprise:
+    "AI Strategy Lead & AI Compliance Officer for Bosch Mobility Electronics, with portfolio cadence across a 40,000-employee organization.",
+  ecosystem:
+    "Rollout work includes 20+ AI solutions and agentic AI tooling for 1,600 software developers, supported by developer community feedback loops.",
+  governance:
+    "Public work in agent governance and robotics explores runtime controls, evidence, and physical-AI deployment risk."
 };
 
 const setHeaderState = () => {
