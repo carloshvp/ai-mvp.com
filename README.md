@@ -1,6 +1,6 @@
 # ai-mvp.com
 
-Static first implementation for Carlos Hernandez's CV landing page.
+Static first implementation for Carlos Hernandez's ai-mvp.com landing page.
 
 ## Preview
 
