@@ -7,10 +7,6 @@
   --steel: #657077;
   --muted: #8a928f;
   --rule: #d5d1c7;
-  --signal: #ff5a36;
-  --cobalt: #295dcc;
-  --success: #16856b;
-  --teal: #22b8aa;
   --shadow: 0 18px 60px rgba(16, 20, 22, 0.12);
   --max: 1180px;
   --radius: 8px;
@@ -59,7 +55,7 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid var(--signal);
+  outline: 3px solid var(--steel);
   outline-offset: 3px;
 }
 
@@ -199,7 +195,7 @@ a {
 
 .section-dark {
   background:
-    linear-gradient(90deg, rgba(255, 90, 54, 0.08) 0 1px, transparent 1px 100%) 0 0 / 112px
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 100%) 0 0 / 112px
       112px,
     var(--ink);
   color: var(--white);
@@ -230,7 +226,7 @@ time {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--signal);
+  color: var(--steel);
   font-size: 12px;
   font-weight: 700;
 }
@@ -304,8 +300,8 @@ h3 {
 }
 
 .button.primary {
-  border-color: var(--signal);
-  background: var(--signal);
+  border-color: var(--paper);
+  background: var(--paper);
   color: var(--ink);
 }
 
@@ -380,8 +376,8 @@ h3 {
 .trace-step:hover,
 .trace-step:focus-visible,
 .trace-step.is-active {
-  border-color: var(--signal);
-  background: color-mix(in srgb, var(--signal) 12%, var(--ink));
+  border-color: color-mix(in srgb, var(--white) 46%, transparent);
+  background: color-mix(in srgb, var(--white) 10%, var(--graphite));
 }
 
 .trace-step:hover,
@@ -407,7 +403,7 @@ h3 {
   place-items: center;
   border: 1px solid currentColor;
   border-radius: 50%;
-  color: var(--signal);
+  color: var(--white);
   font-size: 10px;
 }
 
@@ -440,7 +436,7 @@ h3 {
 }
 
 .proof-strip strong {
-  color: var(--signal);
+  color: var(--white);
   font-size: clamp(28px, 3.4vw, 40px);
   line-height: 1;
 }
@@ -478,7 +474,7 @@ h3 {
 
 .status {
   margin-bottom: 12px;
-  color: var(--success);
+  color: var(--steel);
   font-size: 11px;
   font-weight: 800;
 }
@@ -503,7 +499,7 @@ h3 {
   top: 0.7em;
   width: 7px;
   height: 7px;
-  background: var(--signal);
+  background: var(--graphite);
   content: "";
 }
 
@@ -517,7 +513,7 @@ h3 {
 
 .link-row a::after {
   content: " ->";
-  color: var(--signal);
+  color: var(--steel);
 }
 
 .feature-media,
@@ -543,7 +539,7 @@ h3 {
 }
 
 .enterprise-panel > span {
-  color: var(--signal);
+  color: var(--steel);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 12px;
   font-weight: 800;
@@ -715,7 +711,7 @@ h3 {
 }
 
 .timeline time {
-  color: var(--signal);
+  color: var(--steel);
   font-size: 12px;
   font-weight: 800;
 }
@@ -808,7 +804,7 @@ h3 {
 }
 
 .network-grid span {
-  color: var(--signal);
+  color: var(--steel);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 12px;
   text-transform: uppercase;
