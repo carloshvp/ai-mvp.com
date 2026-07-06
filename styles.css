@@ -335,27 +335,12 @@ h3 {
 }
 
 .hero-portrait img {
+  display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
-}
-
-.hero-portrait figcaption {
-  display: grid;
-  gap: 3px;
-  padding: 16px clamp(16px, 2vw, 22px);
-}
-
-.hero-portrait figcaption strong {
-  color: var(--white);
-  font-size: 16px;
-}
-
-.hero-portrait figcaption span {
-  color: color-mix(in srgb, var(--white) 66%, transparent);
-  font-size: 13px;
 }
 
 .focus-grid {
@@ -961,6 +946,14 @@ h3 {
 
   .hero {
     padding-top: 96px;
+  }
+
+  .hero-portrait {
+    order: -1;
+    justify-self: center;
+    width: 100%;
+    max-width: 260px;
+    margin-bottom: 4px;
   }
 
   .trace-panel {
