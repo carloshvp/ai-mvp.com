@@ -316,6 +316,65 @@ h3 {
   font-size: 14px;
 }
 
+.hero-name {
+  margin: 0 0 6px;
+  color: var(--white);
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
+}
+
+.hero-portrait {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--white) 20%, transparent);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--graphite) 72%, transparent);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.hero-portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-portrait figcaption {
+  display: grid;
+  gap: 3px;
+  padding: 16px clamp(16px, 2vw, 22px);
+}
+
+.hero-portrait figcaption strong {
+  color: var(--white);
+  font-size: 16px;
+}
+
+.hero-portrait figcaption span {
+  color: color-mix(in srgb, var(--white) 66%, transparent);
+  font-size: 13px;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.82fr);
+  gap: clamp(32px, 6vw, 86px);
+  align-items: center;
+}
+
+.focus-grid > div p:not(.eyebrow) {
+  max-width: 520px;
+  color: color-mix(in srgb, var(--white) 74%, transparent);
+  font-size: 18px;
+}
+
+.focus .trace-panel {
+  background: color-mix(in srgb, var(--ink) 58%, transparent);
+}
+
 .trace-panel {
   border: 1px solid color-mix(in srgb, var(--white) 20%, transparent);
   border-radius: var(--radius);
@@ -894,6 +953,7 @@ h3 {
   .feature-pair,
   .career-grid,
   .thesis-grid,
+  .focus-grid,
   .publication-columns,
   .contact-grid {
     grid-template-columns: 1fr;
